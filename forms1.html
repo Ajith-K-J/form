@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            background-color: #4158D0;
+background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+
+        }
+                 
+        .btn-grad {
+            background-image: linear-gradient(to right, #FDFC47 0%, #24FE41  51%, #FDFC47  100%);
+            margin: 10px;
+            padding: 15px 45px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+          }
+
+          .btn-grad:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="skyblue">
+    <form action="forms.html">
+        <table>
+            <tr>
+                <th>
+        <label>Firstname</label>&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <td><input type="text" placeholder="enter first name" name="nm1" required maxlength="4"></td><br>
+        </tr>
+        <label>middlename</label>
+        <input type="text" placeholder="enter middle name" name="nm2" required pattern="[A-Za-z]{3}" title="only"><br>
+        <label>Lastname</label>&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="text" placeholder="enter last name" name="nm3" required><br>
+        <label>Course</label>
+        <select name="state">
+            <option>Course</option>
+            <option>bca</option>
+            <option>mca</option>
+            <option>bba</option>
+        </select>
+        <br>
+        <label>Phone number</label>
+        <input style="width:30px" value="+91" >
+        <input type="number"  name="no" min="2" max="5"><br>
+        <label>gender</label><br>
+        <input type="radio" name="gender">female<br>
+        <input type="radio" name="gender">male<br>
+        <input type="radio" name="gender">other<br>
+        <label for="add">address</label><br>
+        <textarea name="add"></textarea><br>
+        <label>email</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <input type="email" placeholder="enter email"><br>
+       
+        <label>password</label>
+        <input type="password" name="password" min="5" max="10"><br>
+        <label>Re-type password</label>
+        <input type="password" name="re password"><br><br>
+        <input type="submit" class="btn-grad">
+    </table>
+    </form>
+</body>
+</html>
